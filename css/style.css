@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ecf1f6;
+}
+
+header {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(270deg, #3ea1db 0%, #574ae8 100%);
+  margin-bottom: 100px;
+}
+
+.link,
+.search {
+  width: 900px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 41px 0 73px;
+}
+
+ul li,
+a {
+  text-decoration: none;
+  display: inline;
+}
+
+li,
+a {
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: Lexend Deca;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.search {
+  height: 65px;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+}
+
+input {
+  width: 836px;
+  height: 65px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  color: #fff;
+}
+
+input::placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+button {
+  height: 65px;
+  width: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content {
+  max-height: 260px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(19, 19, 19, 0.5);
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.date-like {
+  display: flex;
+  justify-content: space-between;
+}
+
+#icon {
+  fill: #574ae801;
+  stroke: #574ae8;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+#icon.filled,
+#icon:hover {
+  fill: #574ae8;
+}
+
+h2 {
+  font-family: Lexend Deca;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #1a202c;
+}
+
+p {
+  font-family: Lexend Deca;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #717171;
+}

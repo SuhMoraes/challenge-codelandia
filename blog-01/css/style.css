@@ -44,6 +44,7 @@ a {
   line-height: 30px;
 }
 
+
 .search {
   height: 65px;
   border-radius: 6px;
@@ -58,8 +59,6 @@ input {
   border: 0 none;
   outline: 0;
   background: rgba(255, 255, 255, 0.2);
-  font-size: 16px;
-  color: #fff;
 }
 
 input::placeholder {
@@ -70,8 +69,6 @@ input::placeholder {
   color: #fff;
   opacity: 0.5;
 }
-
-
 
 button {
   height: 65px;
@@ -101,28 +98,27 @@ main {
   justify-content: space-between;
 }
 
-label{ 
+label {
   cursor: pointer;
 }
 
-#coracao { 
+#coracao {
   display: none;
 }
 
-#coracao:checked+label>svg {
-    animation: preencher;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+#coracao:checked + label > svg {
+  animation: preencher;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 @keyframes preencher {
-    0% {
-        fill: transparent;
-    }
-    100% {
-        fill: #574AE8;
-        ;
-    }
+  0% {
+    fill: transparent;
   }
+  100% {
+    fill: #574ae8;
+  }
+}
 
 h2 {
   font-family: Lexend Deca;
@@ -138,4 +134,40 @@ p {
   font-weight: 400;
   line-height: 32px;
   color: #717171;
+}
+
+@media screen and (min-width: 360px) and (max-width: 990px) {
+  .link,
+  .search {
+    max-width: 80%;
+  }
+
+  li,
+  a {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  main {
+    max-width: 80%;
+  }
+
+  .content {
+    max-height: 100%;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }

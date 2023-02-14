@@ -1,15 +1,18 @@
-const searchInput = document.getElementById("searchInput");
-const resultsContainer = document.getElementsByClassName("content");
+let inputElement = document.querySelector("input");
+let listElement = document.querySelector(".principal");
+let itemElement = listElement.querySelectorAll(".content");
+ 
+//Logica de busca por palavra
+inputElement.addEventListener("input", (e) => {
+  let inputed = e.target.value.toLowerCase();
 
-searchInput.addEventListener("input", function() {
-  const searchValue = searchInput.value.toLowerCase();
-  let results = "";
+  itemElement.forEach((div) => {
+    let text = div.textContent.toLowerCase();
 
-  for (let item of data) {
-    if (item.name.toLowerCase().includes(searchValue)) {
-      results += `<div>${item.name}</div>`;
+    if(text.includes(inputed)) {
+      div.style.display = "block"
+    } else {
+      div.style.display = "none"
     }
-  }
-
-  resultsContainer.innerHTML = results;
-});
+  })
+})
